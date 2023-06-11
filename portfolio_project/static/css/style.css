@@ -1698,7 +1698,7 @@ h2.sidebar-title:before {
   color: #002147;
 }
 #preloader {
-  background: #002147 url('img/preloader.gif') no-repeat scroll center center;
+  background: #002147 ;
   height: 100%;
   left: 0;
   overflow: visible;
