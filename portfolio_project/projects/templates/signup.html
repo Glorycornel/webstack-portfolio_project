@@ -80,14 +80,20 @@
                     </div>
                 </div>    
             </div> 
-    <div class="login-page">
-        <img src="{% static 'images/login-background.PNG' %}" alt="">
-          <div class="signup">
-            <h1>Sign Up</h1>
-            <br>
-            <a href="{% url 'student_register_view' %}"><p>I'm a Student</p> </a>
-            <br>
-            <a href="{% url 'teacher_register_view' %}"><p>I'm a Teacher</p> </a>
+            <section class="vh-100 bg-image"
+            style="background-color: #002147;">
+            <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+                    <div class="container h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                                <div class="card" style="border-radius: 15px;">
+                                    <div class="card-body p-5">
+                                                <div class="title-default-left-bold">Sign up</div>
+
+            <a href="{% url 'student_register_view' %}" class="btn default-big-btn" tabindex="-1" role="button" aria-disabled="true">I'm a Student</a>
+            
+
+            <a href="{% url 'teacher_register_view' %}" class="btn default-big-btn" tabindex="-1" role="button" aria-disabled="true">I'm a Teacher</a>
           </div>
           </div>
     </section> 

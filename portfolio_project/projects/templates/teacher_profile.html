@@ -1,10 +1,275 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+
+
+<!-- Mirrored from www.radiustheme.com/demo/html/academics/academics/index4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 May 2023 13:15:25 GMT -->
 <head>
-    <meta charset="UTF-8">
-    <title>teacher page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ user.first_name }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <!-- Font-awesome CSS-->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- Owl Caousel CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/OwlCarousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/OwlCarousel/owl.theme.default.min.css' %}">
+    <!-- Main Menu CSS -->
+    <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+    <!-- nivo slider CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/slider/css/nivo-slider.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'vendor/slider/css/preview.css' %}" type="text/css" media="screen" />
+    <!-- Datetime Picker Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/jquery.datetimepicker.css' %}">
+    <!-- Magic popup CSS -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <!-- Switch Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/hover-min.css' %}">
+    <!-- ReImageGrid CSS -->
+    <link rel="stylesheet" href="{% static 'css/reImageGrid.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <!-- Modernizr Js -->
+    <script src="{% static 'js/modernizr-2.8.3.min.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 </head>
 <body>
-    <h1> hello {{ user.username }} your role is teacher</h1>
-</body>
-</html>
+    <div class="main-content">
+      <!-- Top navbar -->
+      <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="#" target="_blank">User profile</a>
+          <!-- Form -->
+          <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+            <div class="form-group mb-0">
+            
+                <div class=>
+                    <a href="{% url 'home' %}" class="btn default-big-btn">Back Home</a>
+                </div>
+        
+            </div>
+          </form>
+          <!-- User -->
+          <ul class="navbar-nav align-items-center d-none d-md-flex">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
+                  </span>
+                  <div class="media-body ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">{{ user.first_name }} {{ user.last_name }}</span>
+                  </div>
+                </div>
+              </a>
+              <!--  -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Header -->
+      <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(https://raw.githubusercontent.com/creativetimofficial/argon-dashboard/gh-pages/assets-old/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
+        <!-- Mask -->
+        <span class="mask bg-gradient-default opacity-8"></span>
+        <!-- Header container -->
+        <div class="container-fluid d-flex align-items-center">
+          <div class="row">
+            <div class="col-lg-7 col-md-10">
+              <h1 class="display-2 text-white">Hello {{ user.first_name }}</h1>
+              <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
+              <a href="#!" class="btn btn-info">Edit profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page content -->
+      <div class="container-fluid mt--7">
+        <div class="row">
+          <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+            <div class="card card-profile shadow">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 order-lg-2">
+                  <div class="card-profile-image">
+                    <a href="#">
+                      <img src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg" class="rounded-circle">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-sm btn-default float-right">Message</a>
+                </div>
+              </div>
+              <div class="card-body pt-0 pt-md-4">
+                <div class="row">
+                  <div class="col">
+                    <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                      <div>
+                        <span class="heading">22</span>
+                        <span class="description">Classes</span>
+                      </div>
+                      <div>
+                        <span class="heading">10</span>
+                        <span class="description">Task</span>
+                      </div>
+                      <div>
+                        <span class="heading">89</span>
+                        <span class="description">Message</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3>
+                    {{ user.first_name }} {{user.last_name}}
+                  </h3>
+                  <div class="h5 font-weight-300">
+                    <i class="ni location_pin mr-2"></i>Bucharest, Romania
+                  </div>
+            
+                  <div>
+                    <i class="ni education_hat mr-2"></i>University of Computer Science
+                  </div>
+                  <hr class="my-4">
+                  <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.</p>
+                  <a href="#">Show more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 order-xl-1">
+            <div class="card bg-secondary shadow">
+              <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                  <div class="col-8">
+                    <h3 class="mb-0">My account</h3>
+                  </div>
+                  <div class="col-4 text-right">
+                    <a href="#!" class="btn btn-sm btn-primary">Settings</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <form>
+                  <h6 class="heading-small text-muted mb-4">User information</h6>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <h1>username</h1>
+                  
+                          <bold>{{ user.username }}</bold>
+                    
+                      </div>
+                      <div class="col-lg-6">
+                        <h1>Email</h1>
+                  
+                          <bold>{{ user.email }}</bold>
+                    
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <h1>First Name</h1>
+                  
+                          <bold>{{ user.first_name }}</bold>
+                    
+                      </div>
+                      <div class="col-lg-6">
+                        <h1>Last Name</h1>
+                  
+                          <bold>{{ user.last_name }}</bold>
+                    
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                  <!-- Address -->
+                  <h6 class="heading-small text-muted mb-4">Class Activities</h6>
+                  <div class="row">
+                    <div class="col-lg-7 offset-md-1 p-2">
+                      <a href="#!" class="btn btn-info">Task list</a>
+                    </div>
+                    <div class="col-lg-4 p-2">
+                      <a href="#!" class="btn btn-info">Add Marks</a>
+                    </div>
+                    <div class="col-lg-7 offset-md-1 p-2">
+                      <a href="#!" class="btn btn-info">Upload Task</a>
+
+                    </div>
+                    <div class="col-lg-4 p-2">
+                      <a href="#!" class="btn btn-info">View Submission</a>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                  <!-- Description -->
+                  <h6 class="heading-small text-muted mb-4">About me</h6>
+                  <div class="pl-lg-4">
+                    <div class="form-group focused">
+                      <label>About Me</label>
+                      <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="row align-items-center justify-content-xl-between">
+        <div class="col-xl-6 m-auto text-center">
+          
+
+
+	<!-- jquery-->
+  <script src="{% static 'js/jquery-2.2.4.min.js' %}" type="text/javascript"></script>
+  <!-- Plugins js -->
+  <script src="{% static 'js/plugins.js' %}" type="text/javascript"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+  <!-- WOW JS -->
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <!-- Nivo slider js -->
+  <script src="{% static 'vendor/slider/js/jquery.nivo.slider.js' %}" type="text/javascript"></script>
+  <script src="{% static 'vendor/slider/home.js' %}" type="text/javascript"></script>
+  <!-- Owl Cauosel JS -->
+  <script src="{% static 'vendor/OwlCarousel/owl.carousel.min.js' %}" type="text/javascript"></script>
+  <!-- Meanmenu Js -->
+  <script src="{% static 'js/jquery.meanmenu.min.js' %}" type="text/javascript"></script>
+  <!-- Srollup js -->
+  <script src="{% static 'js/jquery.scrollUp.min.js' %}" type="text/javascript"></script>
+  <!-- jquery.counterup js -->
+  <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+  <script src="{% static 'js/waypoints.min.js' %}"></script>
+  <!-- Countdown js -->
+  <script src="{% static 'js/jquery.countdown.min.js' %}" type="text/javascript"></script>
+  <!-- Isotope js -->
+  <script src="{% static 'js/isotope.pkgd.min.js' %}" type="text/javascript"></script>
+  <!-- Magic Popup js -->
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}" type="text/javascript"></script>
+  <!-- Gridrotator js -->
+  <script src="{% static 'js/jquery.gridrotator.js' %}" type="text/javascript"></script>
+  <!-- Custom Js -->
+  <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/profile.js' %}" type="text/javascript"></script>
+  </body>
+  
+  
+  <!-- Mirrored from www.radiustheme.com/demo/html/academics/academics/contact2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 May 2023 13:17:14 GMT -->
+  </html>
