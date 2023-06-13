@@ -17,7 +17,7 @@ def home(request):
     return render(request, 'home.html')
 
 def SignUp(request):
-    return render(request,'classroom/signup.html',{})
+    return render(request,'signup.html',{})
 
 def about_view(request):
     return render(request, 'about.html')
@@ -95,9 +95,32 @@ def login_view(request):
 def student_profile_view(request):
     return render(request,'student_profile.html')
 
+def studentupdate_profile_view(request):
+    return render(request,'studentupdate_profile.html',{})
+
 
 def teacher_profile_view(request):
     return render(request,'teacher_profile.html')
+
+def teacherupdate_profile_view(request):
+    return render(request,'teacherupdate_profile.html',{})
+
+
+def studentscore_board_view(request):
+    return render(request,'studentscore_board.html',{})
+
+
+def teacher_scoreboard_view(request):
+    return render(request,'teacher_scoreboard.html',{})
+
+
+def uploadtask_view(request):
+    return render(request,'uploadtask.html',{})
+
+def submittask_view(request):
+    return render(request,'submittask.html',{})
+
+
 
 ## logout view.
 @login_required

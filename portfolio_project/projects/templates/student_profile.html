@@ -69,7 +69,7 @@
               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="media align-items-center">
                   <span class="avatar avatar-sm rounded-circle">
-                    <img alt="Image placeholder" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
+                    <img alt="Image placeholder" src="{% static 'img/brand/profile.webp' %}">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
                     <span class="mb-0 text-sm  font-weight-bold">{{ user.first_name }} {{ user.last_name }}</span>
@@ -82,7 +82,7 @@
         </div>
       </nav>
       <!-- Header -->
-      <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(https://raw.githubusercontent.com/creativetimofficial/argon-dashboard/gh-pages/assets-old/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
+      <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-color: #002147; background-size: cover; background-position: center top;">
         <!-- Mask -->
         <span class="mask bg-gradient-default opacity-8"></span>
         <!-- Header container -->
@@ -91,7 +91,7 @@
             <div class="col-lg-7 col-md-10">
               <h1 class="display-2 text-white">Hello {{ user.first_name }}</h1>
               <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
-              <a href="#!" class="btn btn-info">Edit profile</a>
+              <a href="{% url 'studentupdate_profile_view' %}" class="btn btn-info">Edit profile</a>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@
                 <div class="col-lg-3 order-lg-2">
                   <div class="card-profile-image">
                     <a href="#">
-                      <img src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg" class="rounded-circle">
+                      <img src="{% static 'img/brand/profile.webp' %}" class="rounded-circle">
                     </a>
                   </div>
                 </div>
@@ -147,7 +147,7 @@
                   </div>
                   <hr class="my-4">
                   <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.</p>
-                  <a href="#">Show more</a>
+                  <button type="button" class="btn btn-light">Logout</button>
                 </div>
               </div>
             </div>
@@ -202,17 +202,17 @@
                   <h6 class="heading-small text-muted mb-4">Class Activities</h6>
                   <div class="row">
                     <div class="col-lg-7 offset-md-1 p-2">
-                      <a href="#!" class="btn btn-info">Task list</a>
+                      <a href="#!" class="btn btn-info">View Notice</a>
                     </div>
                     <div class="col-lg-4 p-2">
-                      <a href="#!" class="btn btn-info">View Marks</a>
+                      <a href="{% url 'studentscore_board_view' %}" class="btn btn-info">score Board</a>
                     </div>
                     <div class="col-lg-7 offset-md-1 p-2">
-                      <a href="#!" class="btn btn-info">Submit Task</a>
+                      <a href="{% url 'submittask_view' %}" class="btn btn-info">Submit Task</a>
 
                     </div>
                     <div class="col-lg-4 p-2">
-                      <a href="#!" class="btn btn-info">View Tasks</a>
+                      <a href="#!" class="btn btn-info">Download Tasks</a>
                     </div>
                   </div>
                   <hr class="my-4">
