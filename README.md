@@ -81,7 +81,7 @@ Teachers can upload assignment and Students can download assignment given by the
 
 ### Assignment submission by students
 Teacher can check submissions made by their students  and can give them marks for that.
-![Upzone-submissionlist](portfolio_project\static\images\teacherupdatescoreboard.jpeg)
+![Upzone-submissionlist](portfolio_project/portfolio_project\static\images\teacherupdatescoreboard.jpeg)
 
 Upzone uses the multi-user concept of Django where student and teacher are different types of user and have different functionalities.
 Also adding features like notice, messages, Assignment, adding students to the class etc. requires a lot of Django concepts.
