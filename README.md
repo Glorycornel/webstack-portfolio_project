@@ -28,60 +28,60 @@ Upzone contains more features like:
 
 ### About Page
 
-![upzone-about page](portfolio_project\static\images\aboutpage.jpeg)
+![upzone-about page](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/aboutpage.jpeg?raw=true)
 
 ### News Page
 
-![upzone-news page](portfolio_project\static\images\newspage.jpeg)
+![upzone-news page](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/newspage.jpeg?raw=true)
 
 ### Contact Page
 
-![upzone-contact page](portfolio_project\static\images\contactpage.jpeg)
+![upzone-contact page](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/contactpage.jpeg?raw=true)
 
 ### Login Page
 
-![upzone-loginpage](portfolio_project\static\images\loginpage.jpeg)
+![upzone-loginpage](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/loginpage.jpeg?raw=true)
 
 ### Signup Page
-![upzone-Teacher signup page](portfolio_project\static\images\teachersignup.jpeg)
-![upzone- Student Signup page](portfolio_project\static\images\studentsignup.jpeg)
-![upzone- Pre Signup page](portfolio_project\static\images\presignuppage.jpeg)
+![upzone-Teacher signup page](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/teachersignup.jpeg?raw=true)
+![upzone- Student Signup page](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/studentsignup.jpeg?raw=true)
+![upzone- Pre Signup page](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/presignuppage.jpeg?raw=true)
 
 
 
 ### Options Avalaible for teachers (teacher's profile)
 
-![Upzone-teacher's profile](portfolio_project\static\images\teacherprofile1.jpeg)
-![Upzone-teacher's profile](portfolio_project\static\images\teacherprofile2.jpeg)
+![Upzone-teacher's profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/teacherprofile1.jpeg?raw=true)
+![Upzone-teacher's profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/teacherprofile2.jpeg?raw=true)
 
 ### Options available for students (student's profile)
 
-![Upzone-student's profile](portfolio_project\static\images\studentprofile1.jpeg)
-![Upzone-student's profile](portfolio_project\static\images\studentprofile2.jpeg)
+![Upzone-student's profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/studentprofile1.jpeg?raw=true)
+![Upzone-student's profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/studentprofile2.jpeg?raw=true)
 
 ### Edit Profile Page
 User can edit their profile by clicking on Edit profile
 
-![Upzone-Edit profile](portfolio_project\static\images\profileupdate.jpeg)
+![Upzone-Edit profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/profileupdate.jpeg?raw=true)
 
 ### Marks given by teacher
 Here, teachers can see all the marks given by them to a particular student of her class and can update them.
 
-![upzone-marks given](portfolio_project\static\images\teacherupdatescoreboard.jpeg)
+![upzone-marks given](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/teacherupdatescoreboard.jpeg?raw=true)
 
 ### Marks list obtained by Student
 
-![upzone-marks obtained](portfolio_project\static\images\studentscoreboard.jpeg)
+![upzone-marks obtained](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/studentscoreboard.jpeg?raw=true)
 
 ### Assignments uploaded by teacher
 Teachers can upload assignment and Students can download assignment given by their teacher and can submit their work too.
 
-![Upzone-assignmentpage](portfolio_project\static\images\teacheruploadtaskimage.jpeg)
-![Upzone-assignmentpage](portfolio_project\static\images\studentsubmittask.jpeg)
+![Upzone-assignmentpage](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/teacheruploadtaskimage.jpeg?raw=true)
+![Upzone-assignmentpage](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/studentsubmittask.jpeg?raw=true)
 
 ### Assignment submission by students
 Teacher can check submissions made by their students  and can give them marks for that.
-![Upzone-submissionlist](portfolio_project/portfolio_project\static\images\teacherupdatescoreboard.jpeg)
+![Upzone-submissionlist](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/teacherupdatescoreboard.jpeg?raw=true)
 
 Upzone uses the multi-user concept of Django where student and teacher are different types of user and have different functionalities.
 Also adding features like notice, messages, Assignment, adding students to the class etc. requires a lot of Django concepts.
