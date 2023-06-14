@@ -22,51 +22,66 @@ Upzone contains more features like:
 
 ### Home Page
 
-![upzone-homepage](https://user-images.githubusercontent.com/59278577/85334196-73729680-b4f8-11ea-90b6-a42336e1d7dd.PNG)
-![upzone-about page](https://user-images.githubusercontent.com/59278577/85334362-c2203080-b4f8-11ea-973c-e9ff6b481810.PNG)
-![upzone-news page](https://user-images.githubusercontent.com/59278577/85334481-f398fc00-b4f8-11ea-88fc-ba3371076930.PNG)
-![upzone-contact page](https://user-images.githubusercontent.com/59278577/85334481-f398fc00-b4f8-11ea-88fc-ba3371076930.PNG)
+![upzone-homepage](portfolio_project\static\images\home1.jpeg)
+![upzone-homepage](portfolio_project\static\images\home2.jpeg)
+![upzone-homepage](portfolio_project\static\images\home3.jpeg)
 
+### About Page
+
+![upzone-about page](portfolio_project\static\images\aboutpage.jpeg)
+
+### News Page
+
+![upzone-news page](portfolio_project\static\images\newspage.jpeg)
+
+### Contact Page
+
+![upzone-contact page](portfolio_project\static\images\contactpage.jpeg)
 
 ### Login Page
 
-![upzone-loginpage](https://user-images.githubusercontent.com/59278577/85334573-1deab980-b4f9-11ea-86b9-4e1367e78057.PNG)
+![upzone-loginpage](portfolio_project\static\images\loginpage.jpeg)
+
 ### Signup Page
-![upzone-signup1 page](https://user-images.githubusercontent.com/59278577/85334481-f398fc00-b4f8-11ea-88fc-ba3371076930.PNG)
-![upzone-Signup2 page](https://user-images.githubusercontent.com/59278577/85334481-f398fc00-b4f8-11ea-88fc-ba3371076930.PNG)
+![upzone-Teacher signup page](portfolio_project\static\images\teachersignup.jpeg)
+![upzone- Student Signup page](portfolio_project\static\images\studentsignup.jpeg)
+![upzone- Pre Signup page](portfolio_project\static\images\presignuppage.jpeg)
 
 
 
 ### Options Avalaible for teachers (teacher's profile)
 
-![Upzone-teacher's profile](https://user-images.githubusercontent.com/59278577/85334843-8cc81280-b4f9-11ea-8162-2ac5756f3884.PNG)
+![Upzone-teacher's profile](portfolio_project\static\images\teacherprofile1.jpeg)
+![Upzone-teacher's profile](portfolio_project\static\images\teacherprofile2.jpeg)
 
 ### Options available for students (student's profile)
 
-![Upzone-student's profile](https://user-images.githubusercontent.com/59278577/85336072-ac603a80-b4fb-11ea-87b5-a942ce294a2b.PNG)
+![Upzone-student's profile](portfolio_project\static\images\studentprofile1.jpeg)
+![Upzone-student's profile](portfolio_project\static\images\studentprofile2.jpeg)
 
 ### Edit Profile Page
 User can edit their profile by clicking on Edit profile
 
-![Upzone-Edit profile](https://user-images.githubusercontent.com/59278577/85335035-f34d3080-b4f9-11ea-9478-bc4632798eef.PNG)
+![Upzone-Edit profile](portfolio_project\static\images\profileupdate.jpeg)
 
 ### Marks given by teacher
 Here, teachers can see all the marks given by them to a particular student of her class and can update them.
 
-![upzone-marks given](https://user-images.githubusercontent.com/59278577/85335383-8d14dd80-b4fa-11ea-8257-797c5a0fe52a.PNG)
+![upzone-marks given](portfolio_project\static\images\teacherupdatescoreboard.jpeg)
 
 ### Marks list obtained by Student
 
-![upzone-marks obtained](https://user-images.githubusercontent.com/59278577/85335564-d6fdc380-b4fa-11ea-8219-09d40f96f8e7.PNG)
+![upzone-marks obtained](portfolio_project\static\images\studentscoreboard.jpeg)
 
 ### Assignments uploaded by teacher
-Students can download assignment given by their teacher and can submit their work too.
+Teachers can upload assignment and Students can download assignment given by their teacher and can submit their work too.
 
-![Upzone-assignmentpage](https://user-images.githubusercontent.com/59278577/85335929-6c995300-b4fb-11ea-883d-48ab096dd89a.PNG)
+![Upzone-assignmentpage](portfolio_project\static\images\teacheruploadtaskimage.jpeg)
+![Upzone-assignmentpage](portfolio_project\static\images\studentsubmittask.jpeg)
 
 ### Assignment submission by students
 Teacher can check submissions made by their students  and can give them marks for that.
-![Upzone-submissionlist](https://user-images.githubusercontent.com/59278577/85335777-2e039880-b4fb-11ea-8d7d-0edc517ac11e.PNG)
+![Upzone-submissionlist](portfolio_project\static\images\teacherupdatescoreboard.jpeg)
 
 Upzone uses the multi-user concept of Django where student and teacher are different types of user and have different functionalities.
 Also adding features like notice, messages, Assignment, adding students to the class etc. requires a lot of Django concepts.
