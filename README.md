@@ -52,7 +52,7 @@ Upzone contains more features like:
 ### Options Avalaible for teachers (teacher's profile)
 
 ![Upzone-teacher's profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/teacherprofile1.jpeg?raw=true)
-![Upzone-teacher's profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/teacherprofile2.jpeg?raw=true)
+![Upzone-teacher's profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/teacher%20profile%202.jpeg?raw=true)
 
 ### Options available for students (student's profile)
 
@@ -62,7 +62,7 @@ Upzone contains more features like:
 ### Edit Profile Page
 User can edit their profile by clicking on Edit profile
 
-![Upzone-Edit profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/profileupdate.jpeg?raw=true)
+![Upzone-Edit profile](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/profileupdateimage.jpeg?raw=true)
 
 ### Marks given by teacher
 Here, teachers can see all the marks given by them to a particular student of her class and can update them.
