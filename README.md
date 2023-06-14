@@ -22,7 +22,7 @@ Upzone contains more features like:
 
 ### Home Page
 
-![upzone-homepage](portfolio_project\static\images\home1.jpeg)
+![upzone-homepage](https://github.com/Glorycornel/webstack-portfolio_project/blob/main/portfolio_project/static/images/home1.jpeg?raw=true)
 ![upzone-homepage](portfolio_project\static\images\home2.jpeg)
 ![upzone-homepage](portfolio_project\static\images\home3.jpeg)
 
