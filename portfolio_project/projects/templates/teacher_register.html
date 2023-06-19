@@ -90,7 +90,7 @@
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="card" style="border-radius: 15px;">
                             <div class="card-body p-5">
-                                <h2 class="title-default-left-bold">Create an account</h2>
+                                <h2 class="title-default-left-bold">Teacher Create an account</h2>
                   <span class="mb-0 text-muted text-hidden d-none">
                 {% if msg %}
                     {{ msg | safe }}
@@ -103,6 +103,13 @@
                     <div class="form-group first">
                         <input type="text" name="username" class="form-control" autofocus required id="id_username" placeholder="Username">
                     </div>
+                    <div class="form-group last mb-4">
+                        <input type="password" name="password1" autocomplete="new-password" class="form-control" required id="id_password1" placeholder="Password">
+                    </div>
+        
+                    <div class="form-group last mb-4">
+                        <input type="password" name="password2" utocomplete="new-password" class="form-control" required id="id_password2" placeholder="Comfirm password">
+                    </div>
                     <div class="form-group first">
                         <input type="text" name="first_name" class="form-control" required id="id_first_name" placeholder="First name">
                     </div>
@@ -110,26 +117,12 @@
                         <input type="text" name="last_name" class="form-control" required id="id_last_name" placeholder="Last name">
                     </div>
                     <div class="form-group first">
-                        <input type="text" name="email" class="form-control" required id="id_email" placeholder="Email">
+                        <input type="email" name="email" class="form-control" required id="id_email" placeholder="Email">
                     </div>
                     <div class="form-group last mb-4">
-                        <input type="password" name="password1" class="form-control" required id="id_password1" placeholder="Password">
+                        <input type="number" name="phone" autocomplete="new-password" class="form-control" required id="id_phone" placeholder="Phone Number">
                     </div>
-                    <div class="form-group last mb-4">
-                        <input type="password" name="password2" class="form-control" required id="id_password2" placeholder="Comfirm password">
-                    </div>
-                    <!--<div class="d-flex mb-5 align-items-center">
-                      <label class="control control--checkbox mb-0"><span class="caption">student</span>
-                          <input type="checkbox" name="is_student" id="id_is_student">
-                        <div class="control__indicator"></div>
-                      </label>
-                    </div>
-                    <div class="d-flex mb-5 align-items-center">
-                      <label class="control control--checkbox mb-0"><span class="caption">teacher</span>
-                          <input type="checkbox" name="is_teacher" id="id_is_teacher">
-                        <div class="control__indicator"></div>
-                      </label>
-                    </div>-->
+                    
                     <span class="text-error">{{ form.errors }}</span>
                   <input type="submit"  value="Register" class="btn btn-block default-big-btn">
                 </form>

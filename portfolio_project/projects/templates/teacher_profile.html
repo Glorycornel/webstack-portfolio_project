@@ -51,7 +51,7 @@
       <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
         <div class="container-fluid">
           <!-- Brand -->
-          <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="#" target="_blank">User profile</a>
+          <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="#" target="_blank">Teachers profile</a>
           <!-- Form -->
           <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
             <div class="form-group mb-0">
@@ -71,7 +71,7 @@
                     <img alt="Image placeholder" src="{% static 'img/brand/profile.webp' %}">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">{{ user.first_name }} {{ user.last_name }}</span>
+                    <span class="mb-0 text-sm  font-weight-bold">{{ teacher.first_name }} {{ teacher.last_name }}</span>
                   </div>
                 </div>
               </a>
@@ -89,7 +89,7 @@
         <div class="container-fluid d-flex align-items-center">
           <div class="row">
             <div class="col-lg-7 col-md-10">
-              <h1 class="display-2 text-white">Hello {{ user.first_name }}</h1>
+              <h1 class="display-2 text-white">Hello {{ teacher.first_name }}</h1>
               <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
               <a href="{% url 'teacherupdate_profile_view' %}" class="btn btn-info">Edit profile</a>
             </div>
@@ -136,7 +136,7 @@
                 </div>
                 <div class="text-center">
                   <h3>
-                    {{ user.first_name }} {{user.last_name}}
+                    {{ teacher.first_name }} {{teacher.last_name}}
                   </h3>
                   <div class="h5 font-weight-300">
                     <i class="ni location_pin mr-2"></i>Bucharest, Romania
@@ -178,7 +178,7 @@
                       <div class="col-lg-6">
                         <h1>Email</h1>
                   
-                          <bold>{{ user.email }}</bold>
+                          <bold>{{ teacher.email }}</bold>
                     
                       </div>
                     </div>
@@ -186,13 +186,13 @@
                       <div class="col-lg-6">
                         <h1>First Name</h1>
                   
-                          <bold>{{ user.first_name }}</bold>
+                          <bold>{{ teacher.first_name }}</bold>
                     
                       </div>
                       <div class="col-lg-6">
                         <h1>Last Name</h1>
                   
-                          <bold>{{ user.last_name }}</bold>
+                          <bold>{{ teacher.last_name }}</bold>
                     
                       </div>
                     </div>
