@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404,redirect
 from projects.forms import StudentProfileForm, LoginForm, TeacherProfileForm, UserForm
 from django.contrib.auth.decorators import login_required
 from projects import models
-from django.contrib.auth import authenticate, login, logout,update_session_auth_hash
+from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect,HttpResponse
 from django.contrib import messages
 from django.urls import reverse
@@ -11,9 +11,6 @@ from . models import Student, Teacher
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
-
-def SignUp(request):
-    return render(request,'signup.html',{})
 
 def about_view(request):
     return render(request, 'about.html')
@@ -142,44 +139,55 @@ def login_view(request):
             msg = 'error validating form'
     return render(request, 'login.html', {'form': form, 'msg': msg})
 
+@login_required
 def student_profile_view(request, user_id):
-    student = Student.objects.get(pk = user_id)
-    return render(request,'student_profile.html',{"student": student})
+    try:
+        student = Student.objects.get(pk = user_id)
+    except (KeyError, Teacher.DoesNotExist):
+        return HttpResponseRedirect(reverse('home',))
+    else:
+        return render(request,'student_profile.html',{"student": student})
 
-
+@login_required
 def teacher_profile_view(request, user_id):
-    teacher = Teacher.objects.get(pk = user_id)
-    return render(request,'teacher_profile.html',{"teacher": teacher})
+    try:
+        teacher = Teacher.objects.get(pk = user_id)
+    except (KeyError, Teacher.DoesNotExist):
+        return HttpResponseRedirect(reverse('home',))
+    else:
+        return render(request,'teacher_profile.html',{"teacher": teacher})
 
-
+@login_required
 def studentupdate_profile_view(request):
     return render(request,'studentupdate_profile.html',{})
 
+@login_required
 def teacherupdate_profile_view(request):
     return render(request,'teacherupdate_profile.html',{})
 
-
+@login_required
 def studentscore_board_view(request):
     return render(request,'studentsscore_board.html',{})
 
-
+@login_required
 def teacher_scoreboard_view(request):
     return render(request,'teacher_scoreboard.html',{})
 
-
+@login_required
 def uploadtask_view(request):
     return render(request,'uploadtask.html',{})
 
+@login_required
 def submittask_view(request):
     return render(request,'submittask.html',{})
 
 
-
-## logout view.
-@login_required
-def user_logout(request):
-    logout(request)
-    return HttpResponseRedirect(reverse('home'))
-
 def signup_view(request):
     return render(request,'signup.html',{})
+
+def logout_view(request):
+    logout(request)
+    return redirect('home')
+
+
+

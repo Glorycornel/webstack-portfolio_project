@@ -20,5 +20,5 @@ urlpatterns = [
     path('contact/', views.contact_view, name='contact_view'),
     path('news/', views.news_view, name='news_view'),
     path('signup/', views.signup_view, name='signup_view'),
-    #path('logout/',LogoutView.as_view(next_page='student', 'teacher'),name="logout"),
+    path('logout/', views.logout_view, name='logout'),
 ]
